@@ -1,84 +1,205 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6;
-    color: #333;
+* {
     margin: 0;
     padding: 0;
-    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container {
-    max-width: 700px;
-    margin: 50px auto;
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    color: #0b6623;
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-header h2 {
-    color: #2c3e50;
-    font-size: 24px;
-    margin-top: 0;
-}
-
-header p {
-    color: #666;
-    font-size: 16px;
-    margin-bottom: 30px;
-}
-
-.about, .contact {
-    margin-bottom: 30px;
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 8px;
-}
-
-.about h3, .contact h3 {
-    color: #0b6623;
-    margin-top: 0;
-}
-
-.about p, .contact p {
+body {
+    background-color: #f9fafb;
+    color: #1f2937;
     line-height: 1.6;
-    color: #555;
 }
 
-.contact-info {
-    margin-top: 20px;
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    margin: 10px;
-    color: #fff;
-    background-color: #25d366;
-    text-decoration: none;
-    border-radius: 5px;
+.logo {
+    font-size: 22px;
     font-weight: bold;
-    transition: background 0.3s ease;
+    color: #0b6623;
 }
 
-.btn.email {
-    background-color: #0b6623;
+.logo i {
+    margin-right: 8px;
 }
 
-.btn:hover {
+.navbar nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #0b6623;
+}
+
+.nav-btn {
+    background: #0b6623;
+    color: #fff !important;
+    padding: 8px 18px;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #0b6623, #15803d);
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
     opacity: 0.9;
 }
 
+.hero-btns {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #ffffff;
+    color: #0b6623;
+}
+
+.btn-primary:hover {
+    background: #f3f4f6;
+}
+
+.btn-secondary {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Features & Courses */
+.features, .courses {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.features h2, .courses h2, .contact h2 {
+    font-size: 32px;
+    color: #111827;
+    margin-bottom: 50px;
+}
+
+.feature-grid, .course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card, .course-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover, .course-card:hover {
+    transform: translateY(-5px);
+}
+
+.card i, .course-card i {
+    font-size: 40px;
+    color: #0b6623;
+    margin-bottom: 20px;
+}
+
+.card h3, .course-card h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.card p, .course-card p {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+/* Contact Section */
+.contact {
+    background: #f3f4f6;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact p {
+    color: #4b5563;
+    margin-bottom: 30px;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.whatsapp-btn, .call-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 30px;
+    border-radius: 30px;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.whatsapp-btn {
+    background: #25d366;
+}
+
+.call-btn {
+    background: #0b6623;
+}
+
+/* Footer */
 footer {
+    background: #111827;
+    color: #9ca3af;
+    text-align: center;
+    padding: 25px;
     font-size: 14px;
-    color: #888;
-    margin-top: 20px;
-    border-top: 1px solid #eee;
-    padding-top: 15px;
 }
