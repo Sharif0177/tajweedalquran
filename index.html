@@ -1,90 +1,127 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="bn" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>তাজবিদুল কুরআন একাডেমি - অনলাইন কুরআন শিক্ষা</title>
+    <title>তাজবিদুল কুরআন - অনলাইন কুরআন শিক্ষা একাডেমি</title>
     <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome for Icons -->
+    <!-- FontAwesome & Google Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Header / Navbar -->
     <header class="navbar">
-        <div class="logo">
-            <i class="fa-solid fa-quran"></i> তাজবিদুল কুরআন
+        <div class="logo-area">
+            <img src="logo.png" alt="তাজবিদুল কুরআন লোগো" class="brand-logo">
+            <span>তাজবিদুল কুরআন</span>
         </div>
-        <nav>
-            <a href="#about">আমাদের সম্পর্কে</a>
+        <nav class="nav-links">
+            <a href="#hero">হোম</a>
+            <a href="#features">বৈশিষ্ট্য</a>
             <a href="#courses">কোর্সসমূহ</a>
-            <a href="#contact" class="nav-btn">যোগাযোগ</a>
+            <a href="https://wa.me/966550739413" target="_blank" class="nav-cta"><i class="fa-brands fa-whatsapp"></i> যোগাযোগ</a>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>সহজ ও শুদ্ধভাবে কুরআন শিক্ষা নিন ঘরে বসেই</h1>
-            <p>অভিজ্ঞ ও দক্ষ কারীদের তত্ত্বাবধানে তাজবীদসহ সহীহ্ নূরানী কায়দা, নাজিরা, হিফজ এবং মাসআলা-মাসায়েল শিক্ষা কোর্স।</p>
-            <div class="hero-btns">
-                <a href="https://wa.me/your-number" target="_blank" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> আজই ভর্তি হোন</a>
-                <a href="#courses" class="btn btn-secondary">কোর্সসমূহ দেখুন</a>
-            </div>
+    <section class="hero" id="hero">
+        <div class="hero-badge">🌟 প্রফেশনাল অনলাইন কুরআন শিক্ষা প্ল্যাটফর্ম</div>
+        <h1>ঘরে বসে সহীহ ও সুন্দরভাবে কুরআন তিলাওয়াত শিখুন</h1>
+        <p>অভিজ্ঞ কারী ও হাফেজ শিক্ষকদের তত্ত্বাবধানে তাজবীদসহ নূরানী কায়দা, নাজিরা, হিফজ এবং মাসআলা-মাসায়েল শিক্ষা কোর্স। যেকোনো বয়সের শিক্ষার্থীদের জন্য বিশেষ পরিচর্যা।</p>
+        <div class="hero-btns">
+            <a href="https://wa.me/966550739413?text=আসসালামু আলাইকুম,%20কুরআন%20শিক্ষার%20কোর্স%20সম্পর্কে%20জানতে%20চাই।" target="_blank" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> হোয়াটসঅ্যাপে কথা বলুন</a>
+            <a href="#courses" class="btn btn-outline">কোর্সসমূহ দেখুন</a>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="stat-item">
+            <h3>১০০%</h3>
+            <p>শুদ্ধ তিলাওয়াতের নিশ্চয়তা</p>
+        </div>
+        <div class="stat-item">
+            <h3>ওয়ান-টু-ওয়ান</h3>
+            <p>স্বতন্ত্র লাইভ ক্লাস</p>
+        </div>
+        <div class="stat-item">
+            <h3>বিশেষ ব্যবস্থা</h3>
+            <p>মহিলাদের জন্য নারী শিক্ষিকা</p>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section class="features" id="about">
-        <h2>আমাদের বিশেষত্ব কেন?</h2>
+    <section class="features" id="features">
+        <div class="section-title">
+            <h2>কেন আমাদের একাডেমী বেছে নেবেন?</h2>
+            <p>সহজ ও কার্যকরী পদ্ধতিতে কুরআন শিক্ষা প্রদানে আমরা প্রতিশ্রুতিবদ্ধ</p>
+        </div>
         <div class="feature-grid">
             <div class="card">
-                <i class="fa-solid fa-chalkboard-user"></i>
-                <h3>দক্ষ শিক্ষক</h3>
-                <p>প্রত্যেক শিক্ষার্থীর জন্য আলাদা যত্ন ও নিবিড় তদারকি নিশ্চিত করা হয়।</p>
+                <div class="icon-box"><i class="fa-solid fa-chalkboard-user"></i></div>
+                <h3>ব্যক্তিগত তদারকি</h3>
+                <p>গ্রুপ ক্লাসের ঝামেলা ছাড়াই প্রতিটি শিক্ষার্থীকে আলাদা সময় দিয়ে হরফ ও মাখরাজ সংশোধন করা হয়।</p>
             </div>
             <div class="card">
-                <i class="fa-solid fa-clock"></i>
-                <h3>সুলভ সময়</h3>
-                <p>আপনার সুবিধাজনক সময়ে ২৪ ঘণ্টার যেকোনো সময়ে ক্লাসের ব্যবস্থা।</p>
+                <div class="icon-box"><i class="fa-solid fa-person-dress"></i></div>
+                <h3>পর্দার সাথে পড়ার সুযোগ</h3>
+                <p>মা ও বোনদের জন্য অভিজ্ঞ ও দক্ষ হাফেজা নারী শিক্ষিকার মাধ্যমে ঘরে বসে পড়ার সুব্যবস্থা রয়েছে।</p>
             </div>
             <div class="card">
-                <i class="fa-solid fa-shield-halved"></i>
-                <h3>নারীদের জন্য সুব্যবস্থা</h3>
-                <p>বোন ও মেয়েদের জন্য অভিজ্ঞ নারী শিক্ষিকার মাধ্যমে পর্দার সাথে পড়ার সুযোগ।</p>
+                <div class="icon-box"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                <h3>সুবিধাজনক সময়</h3>
+                <p>ছাত্র-ছাত্রী ও প্রবাসীদের সুবিধাজনক সময় অনুযায়ী ক্লাসের শিডিউল নির্ধারণ করা হয়।</p>
             </div>
         </div>
     </section>
 
     <!-- Courses Section -->
     <section class="courses" id="courses">
-        <h2>আমাদের কোর্সসমূহ</h2>
+        <div class="section-title">
+            <h2>আমাদের প্রিমিয়াম কোর্সসমূহ</h2>
+            <p>আপনার বা আপনার সন্তানের জন্য সঠিক কোর্সটি সিলেক্ট করুন</p>
+        </div>
         <div class="course-grid">
             <div class="course-card">
-                <i class="fa-solid fa-book-open"></i>
-                <h3>নূরানী কায়দা ও কুরআন শিক্ষা</h3>
-                <p>আরবি হরফ চেনা, উচ্চারণ ও মাখরাজ সহকারে সহীহ্ তিলাওয়াত শেখার প্রাথমিক কোর্স।</p>
+                <div class="course-tag">বেসিক কোর্স</div>
+                <div class="course-content">
+                    <i class="fa-solid fa-book-quran"></i>
+                    <h3>নূরানী কায়দা ও শুদ্ধ তিলাওয়াত</h3>
+                    <p>আরবি হরফ চেনা, সঠিক উচ্চারণ, মাখরাজ এবং হরকত অনুশীলনের মাধ্যমে কুরআন পড়ার ভিত গড়ার কোর্স।</p>
+                    <a href="https://wa.me/966550739413?text=নূরানী%20কায়দা%20কোর্স সম্পর্কে জানতে চাই।" target="_blank" class="course-btn">ভর্তি হতে যোগাযোগ করুন</a>
+                </div>
             </div>
             <div class="course-card">
-                <i class="fa-solid fa-graduation-cap"></i>
-                <h3>তাজবীদসহ নাজিরা ও হিফজ</h3>
-                <p>কুরআন মজিদ সুন্দর তিলাওয়াত এবং পূর্ণাঙ্গ হিফজ সম্পন্ন করার বিশেষ কোর্স।</p>
+                <div class="course-tag">জনপ্রিয়</div>
+                <div class="course-content">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h3>তাজবীদসহ নাজিরা ও হিফজ</h3>
+                    <p>তাজবীদের সকল নিয়মকানুন মেনে সাবলীলভাবে কুরআন তিলাওয়াত এবং পবিত্র কোরআন হিফজ করার কোর্স।</p>
+                    <a href="https://wa.me/966550739413?text=তাজবীদ%20ও%20হিফজ%20কোর্স সম্পর্কে জানতে চাই।" target="_blank" class="course-btn">ভর্তি হতে যোগাযোগ করুন</a>
+                </div>
             </div>
             <div class="course-card">
-                <i class="fa-solid fa-hands-praying"></i>
-                <h3>সাপ্তাহিক দ্বীনি শিক্ষা</h3>
-                <p>নামাজ, রোজা, প্রয়োজনীয় দোয়া, মাসআলা এবং দৈনন্দিন জীবনের ইসলামি শিক্ষা।</p>
+                <div class="course-tag">জরুরি</div>
+                <div class="course-content">
+                    <i class="fa-solid fa-mosque"></i>
+                    <h3>নামাজ, দোয়া ও মাসআলা শিক্ষা</h3>
+                    <p>দৈনন্দিন জীবনের প্রয়োজনীয় দোয়া, মাসআলা-মাসায়েল এবং সহীহভাবে নামাজ আদায়ের বিশেষ শিক্ষা।</p>
+                    <a href="https://wa.me/966550739413?text=নামাজ%20ও%20দোয়া%20কোর্স সম্পর্কে জানতে চাই।" target="_blank" class="course-btn">ভর্তি হতে যোগাযোগ করুন</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2>যোগাযোগ করুন</h2>
-        <p>কোর্সে ভর্তি হতে বা বিস্তারিত জানতে সরাসরি নিচের মাধ্যমে যোগাযোগ করুন:</p>
-        <div class="contact-box">
-            <a href="https://wa.me/your-number" target="_blank" class="whatsapp-btn"><i class="fa-brands fa-whatsapp"></i> হোয়াটসঅ্যাপে চ্যাট করুন</a>
-            <a href="tel:your-phone-number" class="call-btn"><i class="fa-solid fa-phone"></i> সরাসরি কল করুন</a>
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="cta-box">
+            <h2>আজই আপনার কুরআন শিক্ষা শুরু করুন</h2>
+            <p>যেকোনো তথ্য জানতে বা ক্লাসের সময়সূচী ঠিক করতে সরাসরি হোয়াটসঅ্যাপে মেসেজ পাঠান।</p>
+            <a href="https://wa.me/966550739413?text=আসসালামু%20আলাইকুম,%20কুরআন%20শিক্ষার%20জন্য%20যোগাযোগ%20করেছি।" target="_blank" class="cta-whatsapp-btn">
+                <i class="fa-brands fa-whatsapp"></i> সরাসরি হোয়াটসঅ্যাপে চ্যাট করুন
+            </a>
         </div>
     </section>
 
