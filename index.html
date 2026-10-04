@@ -3,38 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>তাজবিদুল কুরআন - অনলাইন কুরআন শিক্ষা</title>
+    <title>তাজবিদুল কুরআন একাডেমি - অনলাইন কুরআন শিক্ষা</title>
     <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Header Section -->
-        <header>
-            <h1>بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</h1>
-            <h2>তাজবিদুল কুরআন অনলাইন ইনস্টিটিউট</h2>
-            <p>সহজ ও শুদ্ধভাবে পবিত্র কুরআন তিলাওয়াত শিখুন ঘরে বসেই</p>
-        </header>
 
-        <!-- About Section -->
-        <section class="about">
-            <h3>আমাদের সম্পর্কে</h3>
-            <p>আমরা আধুনিক প্রযুক্তির মাধ্যমে ছোট ও বড় সবার জন্য ঘরে বসে শুদ্ধভাবে কুরআন মজিদ শিক্ষা প্রদানের ব্যবস্থা করে থাকি। তাজবীদের নিয়মকানুন মেনে কুরআন শিক্ষা অর্জন করা প্রতিটি মুসলমানের জন্য জরুরি, আর সেই লক্ষ্যেই আমাদের এই অনলাইন প্রজেক্ট।</p>
-        </section>
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-quran"></i> তাজবিদুল কুরআন
+        </div>
+        <nav>
+            <a href="#about">আমাদের সম্পর্কে</a>
+            <a href="#courses">কোর্সসমূহ</a>
+            <a href="#contact" class="nav-btn">যোগাযোগ</a>
+        </nav>
+    </header>
 
-        <!-- Contact Section -->
-        <section class="contact">
-            <h3>যোগাযোগ করুন</h3>
-            <p>আমাদের কোর্সে ভর্তি হতে বা বিস্তারিত জানতে সরাসরি যোগাযোগ করুন:</p>
-            <div class="contact-info">
-                <a href="https://wa.me/your-number" target="_blank" class="btn whatsapp">হোয়াটসঅ্যাপে যোগাযোগ</a>
-                <a href="mailto:your-email@example.com" class="btn email">ইমেইল করুন</a>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>সহজ ও শুদ্ধভাবে কুরআন শিক্ষা নিন ঘরে বসেই</h1>
+            <p>অভিজ্ঞ ও দক্ষ কারীদের তত্ত্বাবধানে তাজবীদসহ সহীহ্ নূরানী কায়দা, নাজিরা, হিফজ এবং মাসআলা-মাসায়েল শিক্ষা কোর্স।</p>
+            <div class="hero-btns">
+                <a href="https://wa.me/your-number" target="_blank" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> আজই ভর্তি হোন</a>
+                <a href="#courses" class="btn btn-secondary">কোর্সসমূহ দেখুন</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Footer -->
-        <footer>
-            <p>&copy; ২০২৬ তাজবিদুল কুরআন। সর্বস্বত্ব সংরক্ষিত।</p>
-        </footer>
-    </div>
+    <!-- Features Section -->
+    <section class="features" id="about">
+        <h2>আমাদের বিশেষত্ব কেন?</h2>
+        <div class="feature-grid">
+            <div class="card">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <h3>দক্ষ শিক্ষক</h3>
+                <p>প্রত্যেক শিক্ষার্থীর জন্য আলাদা যত্ন ও নিবিড় তদারকি নিশ্চিত করা হয়।</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-clock"></i>
+                <h3>সুলভ সময়</h3>
+                <p>আপনার সুবিধাজনক সময়ে ২৪ ঘণ্টার যেকোনো সময়ে ক্লাসের ব্যবস্থা।</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>নারীদের জন্য সুব্যবস্থা</h3>
+                <p>বোন ও মেয়েদের জন্য অভিজ্ঞ নারী শিক্ষিকার মাধ্যমে পর্দার সাথে পড়ার সুযোগ।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <h2>আমাদের কোর্সসমূহ</h2>
+        <div class="course-grid">
+            <div class="course-card">
+                <i class="fa-solid fa-book-open"></i>
+                <h3>নূরানী কায়দা ও কুরআন শিক্ষা</h3>
+                <p>আরবি হরফ চেনা, উচ্চারণ ও মাখরাজ সহকারে সহীহ্ তিলাওয়াত শেখার প্রাথমিক কোর্স।</p>
+            </div>
+            <div class="course-card">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>তাজবীদসহ নাজিরা ও হিফজ</h3>
+                <p>কুরআন মজিদ সুন্দর তিলাওয়াত এবং পূর্ণাঙ্গ হিফজ সম্পন্ন করার বিশেষ কোর্স।</p>
+            </div>
+            <div class="course-card">
+                <i class="fa-solid fa-hands-praying"></i>
+                <h3>সাপ্তাহিক দ্বীনি শিক্ষা</h3>
+                <p>নামাজ, রোজা, প্রয়োজনীয় দোয়া, মাসআলা এবং দৈনন্দিন জীবনের ইসলামি শিক্ষা।</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>যোগাযোগ করুন</h2>
+        <p>কোর্সে ভর্তি হতে বা বিস্তারিত জানতে সরাসরি নিচের মাধ্যমে যোগাযোগ করুন:</p>
+        <div class="contact-box">
+            <a href="https://wa.me/your-number" target="_blank" class="whatsapp-btn"><i class="fa-brands fa-whatsapp"></i> হোয়াটসঅ্যাপে চ্যাট করুন</a>
+            <a href="tel:your-phone-number" class="call-btn"><i class="fa-solid fa-phone"></i> সরাসরি কল করুন</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; ২০২৬ তাজবিদুল কুরআন একাডেমি। সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
 </body>
 </html>
