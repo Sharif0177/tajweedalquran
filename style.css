@@ -1,17 +1,84 @@
-*, *::before, *::after { box-sizing: border-box; }
-
 body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #1a1a2e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-canvas {
-  display: block;
-  /* Pixel-perfect scaling — no blurry edges */
-  image-rendering: pixelated;
-  image-rendering: crisp-edges;
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #0b6623;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+header p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.about, .contact {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.about h3, .contact h3 {
+    color: #0b6623;
+    margin-top: 0;
+}
+
+.about p, .contact p {
+    line-height: 1.6;
+    color: #555;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px;
+    color: #fff;
+    background-color: #25d366;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn.email {
+    background-color: #0b6623;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+footer {
+    font-size: 14px;
+    color: #888;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
 }
